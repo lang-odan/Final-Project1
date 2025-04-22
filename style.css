@@ -1,0 +1,128 @@
+.gradient-background {
+    background: linear-gradient(45deg, #213555, #d8c4b6, #3e5879);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  /* Basic Styles */
+#header {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills {
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Hamburger Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.hamburger .bar {
+    background-color: #333;
+    height: 4px;
+    width: 100%;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+    .nav-pills {
+        display: none;  /* Hide menu by default on mobile */
+        flex-direction: column;
+        width: 100%;
+        background-color: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #hamburger-toggle:checked + .hamburger + #nav-menu {
+        display: flex;  /* Show menu when checkbox is checked */
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+
+h2 {
+    color: #213555 ;
+}
+
+h3 {
+    color: #3e5879;
+} 
+
+#about-me .feature > p {
+    margin-top: 1rem;
+}
+
+#resume {
+    background-color: #f5efe7;
+}
+
+#contact {
+    background-color: #f5efe7;
+}
+
+#contact p {
+    margin-bottom: 0;
+    padding-bottom: 1rem;
+}
+
+.nav-link {
+    color: #213555;
+}
+.social-login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  .social-login:hover {
+    background: #f0f0f0;
+  }
+  
